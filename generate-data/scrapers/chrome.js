@@ -45,6 +45,7 @@ const chromeDataScraper = {
 
             return {
                 name: 'chrome',
+                basedOn: 'chromium',
                 version: cleanText(versionTd.innerHTML),
                 releaseDate: cleanText(versionTd.nextElementSibling.innerHTML.match(/\d{4}-\d{2}-\d{2}/)[0]),
                 engineName: engine[0],
