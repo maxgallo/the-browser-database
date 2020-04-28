@@ -10,5 +10,8 @@
     "browsers"
   ],
   "author": "Max Gallo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^3.0.2"
+  }
 }
