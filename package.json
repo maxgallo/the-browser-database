@@ -1,0 +1,14 @@
+{
+  "name": "the-browsers-db",
+  "version": "1.0.0",
+  "description": "Database with browsers versions, engines, release dates",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "browsers"
+  ],
+  "author": "Max Gallo",
+  "license": "ISC"
+}
