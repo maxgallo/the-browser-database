@@ -1,11 +1,7 @@
 function scrapeOperaData({
-    constants: { engineNames, browserNames }
+    constants: { engineNames, browserNames },
 }) {
-    function cleanText(txt) {
-        return txt
-            .replace('\n', '')
-            .trim();
-    }
+    const { cleanText } = window.utils;
 
     const allRows = document.querySelectorAll('table#historyTable tbody')[0].children;
 

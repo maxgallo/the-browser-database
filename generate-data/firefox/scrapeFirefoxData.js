@@ -1,33 +1,14 @@
 function scrapeFirefoxData({
-    constants: { browserNames, javascriptEngineNames, engineNames }
+    constants: { browserNames, javascriptEngineNames, engineNames },
 }){
-    function cleanText(txt) {
-        return txt
-            .replace('\n', '')
-            .trim();
-    }
+    const  { cleanText, getMonthAsNumber } = window.utils;
 
     function convertDate(date) {
         const [monthAsString, day, year] = date
             .replace(',','')
             .split(' ');
 
-        const month = {
-            January: '01',
-            February: '02',
-            March: '03',
-            April: '04',
-            May: '05',
-            June: '06',
-            July: '07',
-            August: '08',
-            September: '09',
-            October: '10',
-            November: '11',
-            December: '12',
-        }[monthAsString];
-
-        return `${year}-${month}-${('0'+day).slice(-2)}`;
+        return `${year}-${getMonthAsNumber(monthAsString)}-${('0'+day).slice(-2)}`;
     }
 
     const allTables = document.querySelectorAll('table.wikitable');

@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const constants = require('../constants');
+const { addUtilsToWindow } = require('./utils');
 
 async function scrapeWesiteData({
     url,
@@ -12,6 +13,8 @@ async function scrapeWesiteData({
     await page.goto(url);
     await page.waitForSelector(waitForSelector);
 
+    await page.evaluate(addUtilsToWindow);
+    // To remember:  Second param must be serializable (eg. no function)
     const data = await page.evaluate(scraper, { constants });
 
     await browser.close();

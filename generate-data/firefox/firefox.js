@@ -1,8 +1,8 @@
 const path = require('path');
 
 const scrapeFirefoxData = require('./scrapeFirefoxData');
-const scrapeWebsiteData = require('../utils/scrapeWebsiteData');
-const writeJsonFile = require('../utils/writeJsonFile');
+const scrapeWebsiteData = require('../shared/scrapeWebsiteData');
+const writeJsonFile = require('../shared/writeJsonFile');
 const { dataFilePath } = require('../config');
 
 async function generateOperaData() {

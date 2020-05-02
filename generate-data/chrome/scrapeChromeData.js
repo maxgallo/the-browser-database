@@ -1,14 +1,8 @@
 function scrapeChromeData({
-    constants: { javascriptEngineNames, browserNames }
+    constants: { javascriptEngineNames, browserNames },
 }) {
-    function cleanText(txt) {
-        return txt
-            .replace('\n', '')
-            .trim();
-    }
-
+    const { cleanText } = window.utils;
     const versionTds = document.querySelectorAll('table.wikitable.sortable.jquery-tablesorter tbody tr td:first-child');
-
 
     let engineRowspanBuffer = [];
     let v8EngineRowspanBuffer = [];
