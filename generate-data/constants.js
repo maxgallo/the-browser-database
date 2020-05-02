@@ -22,8 +22,17 @@ const browserNames = {
     SAFARI: 'Safari',
 };
 
+// This one matches the following
+// 8
+// 156
+// 15.67
+// 1.2.3
+// 222.333.444
+const versionRegex = '\\d+(\\.\\d+(\\.\\d+)?)?';
+
 module.exports = {
     browserNames,
     engineNames,
     javascriptEngineNames,
+    versionRegex,
 };

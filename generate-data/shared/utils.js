@@ -1,3 +1,19 @@
+// haven't found a way to avoid duplication
+function compareByStringVersion(xVersion, yVersion, factor = 1) {
+    const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat);
+    const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat);
+
+    if (majorX !== majorY) {
+        return (majorX - majorY) * factor;
+    }
+
+    if (minorX !== minorY) {
+        return (minorX - minorY) * factor;
+    }
+
+    return (patchX - patchY) * factor;
+}
+
 function addUtilsToWindow() {
     function cleanText(txt) {
         return txt
@@ -22,12 +38,34 @@ function addUtilsToWindow() {
         }[monthAsString];
     }
 
+    function compareByStringVersion(xVersion, yVersion, factor = 1) {
+        const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat);
+        const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat);
+
+        if (majorX !== majorY) {
+            return (majorX - majorY) * factor;
+        }
+
+        if (minorX !== minorY) {
+            return (minorX - minorY) * factor;
+        }
+
+        return (patchX - patchY) * factor;
+    }
+
+    function getCompareByStringVersion(fieldName, ascending = true) {
+        const sortingFactor = ascending ? 1 : -1;
+        return (x, y) => compareByStringVersion(x[fieldName], y[fieldName], sortingFactor);
+    }
+
     window.utils = {
         cleanText,
         getMonthAsNumber,
+        getCompareByStringVersion,
     };
 }
 
 module.exports = {
     addUtilsToWindow,
+    compareByStringVersion,
 };

@@ -1,7 +1,7 @@
 function scrapeFirefoxData({
     constants: { browserNames, javascriptEngineNames, engineNames },
 }){
-    const  { cleanText, getMonthAsNumber } = window.utils;
+    const  { cleanText, getMonthAsNumber, getCompareByStringVersion } = window.utils;
 
     function convertDate(date) {
         const [monthAsString, day, year] = date
@@ -52,6 +52,8 @@ function scrapeFirefoxData({
         output.push(...getDataFromOneTable(table));
         return output;
     }, []);
+
+    data.sort(getCompareByStringVersion('version'));
 
     return data;
 }
