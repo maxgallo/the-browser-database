@@ -1,21 +1,21 @@
-const { browserEngines } = require('./constants');
+const { engineNames } = require('./constants');
 
 const browserEngines = {
-    [browserEngines.WEBKIT]: {
+    [engineNames.WEBKIT]: {
         openSource: true,
         activelyMantained: true,
         firstReleaseDate: '2001-06-25',
         website: 'https://webkit.org/',
-        forkedFrom: browserEngines.KHTML,
+        forkedFrom: engineNames.KHTML,
     },
-    [browserEngines.BLINK]: {
+    [engineNames.BLINK]: {
         openSource: true,
         activelyMantained: true,
         firstReleaseDate: '2013-04-03',
         website: 'https://www.chromium.org/blink',
-        forkedFrom: browserEngines.WEBKIT,
+        forkedFrom: engineNames.WEBKIT,
     },
-    [browserEngines.TRIDENT]: {
+    [engineNames.TRIDENT]: {
         otherNames: 'MSHTML',
         openSource: false,
         activelyMantained: false,
@@ -23,33 +23,35 @@ const browserEngines = {
         firstReleaseDate: '1997-10-01',
         lastReleaseDate: '2015-07-15',
     },
-    [browserEngines.EDGE_HTML]: {
+    [engineNames.EDGE_HTML]: {
         openSource: false,
         activelyMantained: false,
         firstReleaseDate: '2014-11-12',
         lastReleaseDate: '2018-10-02',
-        forkedFrom: browserEngines.TRIDENT,
+        forkedFrom: engineNames.TRIDENT,
     },
-    [browserEngines.GEKO]: {
+    [engineNames.GEKO]: {
         openSource: true,
         activelyMantained: true,
         firstReleaseDate: '1997-05-01',
     },
-    [browserEngines.PRESTO]: {
+    [engineNames.PRESTO]: {
         openSource: true,
         activelyMantained: false,
         firstReleaseDate: '2003-01-28',
         lastReleaseDate: '2013-07-02',
     },
-    [browserEngines.GOANNA]: {
+    [engineNames.GOANNA]: {
         openSource: true,
         activelyMantained: true,
         firstReleaseDate: '2016-01',
-        forkedFrom: browserEngines.GEKO
+        forkedFrom: engineNames.GEKO
     },
-    [browserEngines.KHTML]: {
+    [engineNames.KHTML]: {
         activelyMantained: true,
         firstReleaseDate: '1998-11-04',
         lastReleaseDate: '2014-06-06',
     },
 };
+
+module.exports = browserEngines;

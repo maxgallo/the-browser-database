@@ -1,4 +1,4 @@
-const browserEngines = {
+const engineNames = {
     BLINK: 'Blink',
     EDGE_HTML: 'EdgeHTML',
     GEKO: 'Geko',
@@ -9,14 +9,21 @@ const browserEngines = {
     KHTML: 'KHTML',
 };
 
+const javascriptEngineNames = {
+    V8: 'V8',
+    SPIDER_MONKEY: 'SpiderMonkey',
+};
+
 const browserNames = {
     CHROME: 'Chrome',
+    CHROMIUM: 'Chromium',
     FIREFOX: 'Firefox',
     OPERA: 'Opera',
     SAFARI: 'Safari',
 };
 
-module.export = {
+module.exports = {
     browserNames,
-    browserEngines,
+    engineNames,
+    javascriptEngineNames,
 };

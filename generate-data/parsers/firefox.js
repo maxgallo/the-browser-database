@@ -1,5 +1,6 @@
 // TODO: download gecko versions from https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Versions
 // TODO: download gecko versions from https://en.wikipedia.org/wiki/SpiderMonkey
+const { browserNames, javascriptEngineNames } = require('../constants');
 
 const operaDataScraper = {
     name: 'firefox',
@@ -57,12 +58,12 @@ const operaDataScraper = {
                 const version = cleanText(parsedVersion);
                 if (/\d{1,4}(\.\d{1,4}(\.\d{1,4})?)?$/.test(version)) {
                     tableData.push({
-                        name: 'firefox',
+                        name: browserNames.FIREFOX,
                         version,
                         releaseDate: convertDate(cleanText(table.rows[rowIndex].cells[1].innerText)),
-                        engineName: 'Gecko',
+                        engineName: engineNames.GEKO,
                         engineVersion: 'read from https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Versions',
-                        jsEngineName: 'SpiderMonkey',
+                        jsEngineName: javascriptEngineNames.SPIDER_MONKEY,
                         jsEngineVersion: 'read from https://en.wikipedia.org/wiki/SpiderMonkey',
                     });
                 }

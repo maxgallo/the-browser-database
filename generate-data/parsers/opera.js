@@ -1,3 +1,5 @@
+const { browserNames, engineNames } = require('');
+
 const operaDataScraper = {
     name: 'opera',
     url: 'https://help.opera.com/en/opera-version-history/',
@@ -27,11 +29,11 @@ const operaDataScraper = {
             const jsEngineName = cleanText(allRows[rowIndex+3].children[1].innerText);
 
             data.push({
-                name: 'opera',
-                basedOn: 'chromium',
+                name: browserNames.OPERA,
+                basedOn: browserNames.CHROMIUM,
                 version,
                 releaseDate,
-                engineName: 'Blink',
+                engineName: engineNames.BLINK,
                 engineVersion,
                 jsEngineName,
                 jsEngineVersion: '',
