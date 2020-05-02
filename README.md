@@ -12,3 +12,4 @@
 ## Missing information
 
 - Opera JavaScriptEngineVersions
+- Firefox JSEngineVersion and EngineVersion

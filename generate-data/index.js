@@ -1,16 +1,9 @@
 const generateChromeData = require('./chrome/chrome');
 const generateOperaData = require('./opera/opera');
-// const chromeDataScraper = require('./scrapers/chrome');
-// const operaDataScrape = require('./scrapers/opera');
-// const firefoxDataScraper = require('./scrapers/firefox');
-// const downloadBrowserData = require('./downloadBrowserData');
+const generateFirefoxData = require('./firefox/firefox');
 
 (async () => {
-    // const chromeData = await downloadBrowserData(chromeDataScraper);
-    // console.dir(chromeData);
-
-    // const operaData = await downloadBrowserData(operaDataScrape);
-    // console.dir(operaData);
     // await generateChromeData();
-    await generateOperaData();
+    // await generateOperaData();
+    await generateFirefoxData();
 })();
