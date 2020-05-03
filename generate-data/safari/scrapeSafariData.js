@@ -1,5 +1,5 @@
 function scrapeFirefoxData({
-    constants: { browserNames, javascriptEngineNames, engineNames, versionRegex },
+    constants: { browserNames, javascriptEngineNames, engineNames },
 }){
     const  { cleanText, parseWikipediaDate, getCompareByStringVersion } = window.utils;
 
@@ -18,11 +18,24 @@ function scrapeFirefoxData({
 
         let rowIndex = 2;
 
+        let skipNextRowsCount = 0;
+
         while(rowIndex <= table.rows.length) {
             const row = table.rows[rowIndex];
             if (!row) {
                 rowIndex++;
                 continue
+            }
+
+            if (skipNextRowsCount > 0) {
+                rowIndex++;
+                skipNextRowsCount--;
+                continue;
+            }
+
+            const rowspan = row.cells[0] && parseInt(row.cells[0].getAttribute('rowspan'));
+            if (rowspan && rowspan > 0) {
+                skipNextRowsCount = rowspan - 1;
             }
 
             const [
@@ -33,11 +46,6 @@ function scrapeFirefoxData({
             ] = [...row.cells].map(x => x.innerText).map(cleanText)
 
             const version = firstColumText;
-
-            if (!(new RegExp(`^${ versionRegex }$`)).test(version)) {
-                rowIndex++;
-                continue;
-            }
 
             const engineVersion = secondColumnText;
 

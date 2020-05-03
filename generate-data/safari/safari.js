@@ -11,7 +11,6 @@ async function generateOperaData() {
         waitForSelector: 'table.wikitable',
         scraper: scrapeSafariData,
     });
-
     writeJsonFile(safariData, path.resolve(dataFilePath, 'safari.json'));
 }
 
