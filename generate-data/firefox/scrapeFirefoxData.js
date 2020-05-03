@@ -1,15 +1,7 @@
 function scrapeFirefoxData({
     constants: { browserNames, javascriptEngineNames, engineNames },
 }){
-    const  { cleanText, getMonthAsNumber, getCompareByStringVersion } = window.utils;
-
-    function convertDate(date) {
-        const [monthAsString, day, year] = date
-            .replace(',','')
-            .split(' ');
-
-        return `${year}-${getMonthAsNumber(monthAsString)}-${('0'+day).slice(-2)}`;
-    }
+    const  { cleanText, parseWikipediaDate, getCompareByStringVersion } = window.utils;
 
     const allTables = document.querySelectorAll('table.wikitable');
 
@@ -35,7 +27,7 @@ function scrapeFirefoxData({
                 tableData.push({
                     name: browserNames.FIREFOX,
                     version,
-                    releaseDate: convertDate(cleanText(table.rows[rowIndex].cells[1].innerText)),
+                    releaseDate: parseWikipediaDate(cleanText(table.rows[rowIndex].cells[1].innerText)),
                     engineName: engineNames.GEKO,
                     engineVersion: 'read from https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Versions',
                     jsEngineName: javascriptEngineNames.SPIDER_MONKEY,

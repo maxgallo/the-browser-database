@@ -38,6 +38,14 @@ function addUtilsToWindow() {
         }[monthAsString];
     }
 
+    function parseWikipediaDate(date) {
+        const [monthAsString, day, year] = date
+            .replace(',','')
+            .split(' ');
+
+        return `${year}-${getMonthAsNumber(monthAsString)}-${('0'+day).slice(-2)}`;
+    }
+
     function compareByStringVersion(xVersion, yVersion, factor = 1) {
         const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
         const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
@@ -60,6 +68,7 @@ function addUtilsToWindow() {
 
     window.utils = {
         cleanText,
+        parseWikipediaDate,
         getMonthAsNumber,
         getCompareByStringVersion,
     };

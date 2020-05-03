@@ -12,6 +12,7 @@ const engineNames = {
 const javascriptEngineNames = {
     V8: 'V8',
     SPIDER_MONKEY: 'SpiderMonkey',
+    CHAKRA_CORE: 'Chakra Core',
 };
 
 const browserNames = {
@@ -20,9 +21,11 @@ const browserNames = {
     FIREFOX: 'Firefox',
     OPERA: 'Opera',
     SAFARI: 'Safari',
+    EDGE: 'Microsoft Edge',
 };
 
 const maintainerNames = {
+    MICROSOFT: 'Microsoft',
     MOZILLA_FOUNDATION: 'Mozilla Foundation',
     THE_CHROMIUM_PROJECT: 'The Chromium Project',
 };
