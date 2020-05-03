@@ -69,11 +69,49 @@ function addUtilsToWindow() {
         return (x, y) => compareByStringVersion(x[fieldName], y[fieldName], sortingFactor);
     }
 
+    function parseTable(table) {
+        let rowIndex = 0;
+        const tableArray = [];
+
+        const colRowspanBuffers = [];
+
+        while (rowIndex < table.rows.length) {
+            const row = table.rows[rowIndex];
+            tableArray[rowIndex] = [];
+
+            let cellIndex = 0;
+            let skippedColumnCount = 0
+
+            while (cellIndex < row.cells.length) {
+                const outputIndex = cellIndex + skippedColumnCount;
+
+                if (colRowspanBuffers[outputIndex] && colRowspanBuffers[outputIndex].length > 0) {
+                    tableArray[rowIndex].push(colRowspanBuffers[outputIndex].pop());
+                    skippedColumnCount++;
+                    continue;
+                }
+
+                const cell = row.cells[cellIndex];
+
+                const rowspan = parseInt(cell.getAttribute('rowspan'));
+                if (rowspan && rowspan > 0) {
+                    colRowspanBuffers[outputIndex] = Array(rowspan - 1).fill(cell.innerText);
+                }
+
+                tableArray[rowIndex].push(row.cells[cellIndex].innerText);
+                cellIndex++;
+            }
+            rowIndex++;
+        }
+        return tableArray;
+    }
+
     window.utils = {
         cleanText,
         parseWikipediaDate,
         getMonthAsNumber,
         getCompareByStringVersion,
+        parseTable,
     };
 }
 

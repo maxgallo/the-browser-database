@@ -1,51 +1,45 @@
 function scrapeChromeData({
-    constants: { javascriptEngineNames, browserNames },
+    constants: { javascriptEngineNames, browserNames, versionRegex },
 }) {
-    const { cleanText } = window.utils;
-    const versionTds = document.querySelectorAll('table.wikitable.sortable.jquery-tablesorter tbody tr td:first-child');
 
-    let engineRowspanBuffer = [];
-    let v8EngineRowspanBuffer = [];
+    const { cleanText, parseTable } = window.utils;
+    const rawTable = document.querySelectorAll('table.wikitable')[1];
 
-    const data = [...versionTds].map(versionTd => {
+    const table = parseTable(rawTable);
+    const rowsLength = table.length;
 
-        const parentElement = versionTd.parentElement;
+    let rowIndex = 1;
+    const data = [];
 
-        if (engineRowspanBuffer.length === 0) {
-            const engineElement = parentElement.children[2];
-            const rowspan = engineElement && parseInt(engineElement.getAttribute('rowspan'));
+    while(rowIndex < rowsLength) {
+        const [
+            version,
+            rawReleaseDate,
+            rawEngine,
+            jsEngineVersion,
+        ] = table[rowIndex].map(cleanText);
 
-            if (rowspan && rowspan > 0) {
-                engineRowspanBuffer = Array(rowspan).fill(cleanText(engineElement.innerText))
-            }
+        if (!new RegExp(`^${versionRegex}$`).test(version)) {
+            rowIndex++;
+            continue;
         }
 
-        if (v8EngineRowspanBuffer.length === 0) {
-            const engineElement = parentElement.children[3];
-            const rowspan = engineElement && parseInt(engineElement.getAttribute('rowspan'));
+        const releaseDate = rawReleaseDate.match(/\d{4}-\d{2}-\d{2}/)[0];
+        const [engineName, engineVersion] = rawEngine.split(' ');
 
-            if (rowspan && rowspan > 0) {
-                v8EngineRowspanBuffer = Array(rowspan).fill(cleanText(engineElement.innerText))
-            }
-        }
-
-        const engineNodeHtml = engineRowspanBuffer.length ? engineRowspanBuffer.pop() : cleanText(parentElement.children[2].innerText);
-        const engine = engineNodeHtml.split(' ');
-
-        const jsEngineVersion = v8EngineRowspanBuffer.length ? v8EngineRowspanBuffer.pop() : cleanText(parentElement.children[3].innerText);
-
-        return {
+        data.push({
             name: browserNames.CHROME,
             basedOn: browserNames.CHROMIUM,
-            version: cleanText(versionTd.innerHTML),
-            releaseDate: cleanText(versionTd.nextElementSibling.innerHTML.match(/\d{4}-\d{2}-\d{2}/)[0]),
-            engineName: engine[0],
-            engineVersion: engine[1],
+            version,
+            releaseDate,
+            engineName,
+            engineVersion,
             jsEngineName: javascriptEngineNames.V8,
             jsEngineVersion,
+        });
 
-        };
-    })
+        rowIndex++;
+    }
 
     return data;
 };

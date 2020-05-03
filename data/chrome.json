@@ -177,7 +177,7 @@
         "engineName": "WebKit",
         "engineVersion": "535.1",
         "jsEngineName": "V8",
-        "jsEngineVersion": "Native Client (NaCl) enabled for apps in the Chrome Web Store[r 24]Web Audio API\nAdditional macOS Lion feature support\nSync Encryption for all data\nPrint preview on Mac\nValidation of HTTPS sites[r 25]\nExperimental Web Request extension API\nExperimental Content Settings extension API[r 26]"
+        "jsEngineVersion": "3.4.14"
     },
     {
         "name": "Chrome",

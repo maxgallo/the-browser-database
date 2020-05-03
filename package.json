@@ -4,7 +4,8 @@
   "description": "Database with browsers versions, engines, release dates",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "node ./test-data/test.js",
+    "generate": "node ./generate-data/index.js"
   },
   "keywords": [
     "browsers"

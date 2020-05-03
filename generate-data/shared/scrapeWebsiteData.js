@@ -13,6 +13,11 @@ async function scrapeWesiteData({
     await page.goto(url);
     await page.waitForSelector(waitForSelector);
 
+    page.on('console', msg => {
+        for (let i = 0; i < msg._args.length; ++i)
+            console.log(`${i}: ${msg._args[i]}`);
+    });
+
     await page.evaluate(addUtilsToWindow);
     // To remember:  Second param must be serializable (eg. no function)
     const data = await page.evaluate(scraper, { constants });
