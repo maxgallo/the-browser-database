@@ -15,6 +15,7 @@
     "puppeteer": "^3.0.2"
   },
   "devDependencies": {
+    "ajv": "^6.12.2",
     "fs-extra": "^9.0.0"
   }
 }
