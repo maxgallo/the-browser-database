@@ -13,6 +13,7 @@ const javascriptEngineNames = {
     V8: 'V8',
     SPIDER_MONKEY: 'SpiderMonkey',
     CHAKRA_CORE: 'Chakra Core',
+    NITRO: 'Nitro',
 };
 
 const browserNames = {

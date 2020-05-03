@@ -39,6 +39,9 @@ function addUtilsToWindow() {
     }
 
     function parseWikipediaDate(date) {
+        if (!date) {
+            return '';
+        }
         const [monthAsString, day, year] = date
             .replace(',','')
             .split(' ');
