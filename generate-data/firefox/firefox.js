@@ -2,8 +2,9 @@ const path = require('path');
 
 const scrapeGeckoData = require('./scrapeGeckoData');
 const scrapeFirefoxData = require('./scrapeFirefoxData');
+const scrapeSpiderMonkeyData = require('./scrapeSpiderMonkeyData');
 const scrapeWebsiteData = require('../shared/scrapeWebsiteData');
-const addGeckoData = require('./addGeckoData');
+const addDataToFirefox = require('./addDataToFirefox');
 const writeJsonFile = require('../shared/writeJsonFile');
 const { dataFilePath } = require('../config');
 
@@ -18,14 +19,29 @@ async function generateOperaData() {
         url: 'https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Versions',
         waitForSelector: '.standard-table',
         scraper: scrapeGeckoData,
-    })
+    });
 
-    // TODO: SM gecko versions from https://en.wikipedia.org/wiki/SpiderMonkey
+    const spiderMonkeyData = await scrapeWebsiteData({
+        url: 'https://en.wikipedia.org/wiki/SpiderMonkey',
+        waitForSelector: 'table.wikitable',
+        scraper: scrapeSpiderMonkeyData,
+    });
 
-    const firefoxAndGeckData = addGeckoData(firefoxData, geckoData);
+    const firefoxAndGeckData = addDataToFirefox({
+        firefoxData,
+        firefoxDataPropName: 'engineVersion',
+        additionalData: geckoData,
+        additionalDataPropName: 'geckoVersion'
+    });
 
-    console.dir(firefoxAndGeckData);
-    // writeJsonFile(firefoxData, path.resolve(dataFilePath, 'firefox.json'));
+    const firefoxAndGeckoAndSpiderMonkeyData = addDataToFirefox({
+        firefoxData: firefoxAndGeckData,
+        firefoxDataPropName: 'jsEngineVersion',
+        additionalData: spiderMonkeyData,
+        additionalDataPropName: 'spiderMonkeyVersion'
+    });
+
+    writeJsonFile(firefoxAndGeckoAndSpiderMonkeyData, path.resolve(dataFilePath, 'firefox.json'));
 }
 
 module.exports = generateOperaData;

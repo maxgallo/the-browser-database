@@ -1,7 +1,7 @@
 // haven't found a way to avoid duplication
 function compareByStringVersion(xVersion, yVersion, factor = 1) {
-    const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat);
-    const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat);
+    const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
+    const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
 
     if (majorX !== majorY) {
         return (majorX - majorY) * factor;
@@ -39,8 +39,8 @@ function addUtilsToWindow() {
     }
 
     function compareByStringVersion(xVersion, yVersion, factor = 1) {
-        const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat);
-        const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat);
+        const [ majorX, minorX, patchX ] = xVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
+        const [ majorY, minorY, patchY ] = yVersion.split('.').map(parseFloat).map(x => isNaN(x) ? 0 : x);
 
         if (majorX !== majorY) {
             return (majorX - majorY) * factor;
