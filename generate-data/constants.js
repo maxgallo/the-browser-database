@@ -22,7 +22,13 @@ const browserNames = {
     SAFARI: 'Safari',
 };
 
-// This one matches the following
+const maintainerNames = {
+    MOZILLA_FOUNDATION: 'Mozilla Foundation',
+    THE_CHROMIUM_PROJECT: 'The Chromium Project',
+};
+
+// This Regex matches the following:
+//
 // 8
 // 156
 // 15.67
@@ -34,5 +40,6 @@ module.exports = {
     browserNames,
     engineNames,
     javascriptEngineNames,
+    maintainerNames,
     versionRegex,
 };
