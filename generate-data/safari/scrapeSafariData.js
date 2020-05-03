@@ -1,4 +1,4 @@
-function scrapeFirefoxData({
+function scrapeSafariData({
     constants: { browserNames, javascriptEngineNames, engineNames },
 }){
     const  { cleanText, parseWikipediaDate, getCompareByStringVersion } = window.utils;
@@ -81,4 +81,4 @@ function scrapeFirefoxData({
     return data;
 }
 
-module.exports = scrapeFirefoxData;
+module.exports = scrapeSafariData;
