@@ -1,0 +1,522 @@
+[
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "66",
+        "releaseDate": "2020-01-07",
+        "engineName": "Blink",
+        "engineVersion": "79",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "65",
+        "releaseDate": "2019-11-13",
+        "engineName": "Blink",
+        "engineVersion": "78",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "64",
+        "releaseDate": "2019-10-07",
+        "engineName": "Blink",
+        "engineVersion": "77",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "63",
+        "releaseDate": "2019-08-20",
+        "engineName": "Blink",
+        "engineVersion": "76",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "62 – design updates to Reborn 3",
+        "releaseDate": "2019-06-27",
+        "engineName": "Blink",
+        "engineVersion": "75",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "60 – R3",
+        "releaseDate": "2019-04-09",
+        "engineName": "Blink",
+        "engineVersion": "73",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "59 beta",
+        "releaseDate": "(Final beta) 2019-02-28",
+        "engineName": "Blink",
+        "engineVersion": "72",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "58",
+        "releaseDate": "2019-01-23",
+        "engineName": "Blink",
+        "engineVersion": "71",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "57",
+        "releaseDate": "2018-11-28",
+        "engineName": "Blink",
+        "engineVersion": "70",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "56",
+        "releaseDate": "2018-09-25",
+        "engineName": "Blink",
+        "engineVersion": "69",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "55",
+        "releaseDate": "2018-08-16",
+        "engineName": "Blink",
+        "engineVersion": "68",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "54",
+        "releaseDate": "2018-06-28",
+        "engineName": "Blink",
+        "engineVersion": "67",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "53",
+        "releaseDate": "2018-05-10",
+        "engineName": "Blink",
+        "engineVersion": "66",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "52 R2",
+        "releaseDate": "2018-04-25",
+        "engineName": "Blink",
+        "engineVersion": "65",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "52",
+        "releaseDate": "2018-03-22",
+        "engineName": "Blink",
+        "engineVersion": "65",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "51",
+        "releaseDate": "2018-02-07",
+        "engineName": "Blink",
+        "engineVersion": "64",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "50",
+        "releaseDate": "2018-01-04",
+        "engineName": "Blink",
+        "engineVersion": "63",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "49",
+        "releaseDate": "2017-11-08",
+        "engineName": "Blink",
+        "engineVersion": "62",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "48",
+        "releaseDate": "2017-09-27",
+        "engineName": "Blink",
+        "engineVersion": "61",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "47",
+        "releaseDate": "2017-08-09",
+        "engineName": "Blink",
+        "engineVersion": "60",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "46",
+        "releaseDate": "2017-06-22",
+        "engineName": "Blink",
+        "engineVersion": "59",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "45",
+        "releaseDate": "2017-05-10",
+        "engineName": "Blink",
+        "engineVersion": "58",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "44",
+        "releaseDate": "2017-03-21",
+        "engineName": "Blink",
+        "engineVersion": "57",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "43",
+        "releaseDate": "2017-02-07",
+        "engineName": "Blink",
+        "engineVersion": "56",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "42",
+        "releaseDate": "2016-12-13",
+        "engineName": "Blink",
+        "engineVersion": "55",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "41",
+        "releaseDate": "2016-10-25",
+        "engineName": "Blink",
+        "engineVersion": "54",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "40",
+        "releaseDate": "2016-09-20",
+        "engineName": "Blink",
+        "engineVersion": "53",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "39",
+        "releaseDate": "2016-08-02",
+        "engineName": "Blink",
+        "engineVersion": "52",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "38",
+        "releaseDate": "2016-06-08",
+        "engineName": "Blink",
+        "engineVersion": "51",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "37",
+        "releaseDate": "2016-05-04",
+        "engineName": "Blink",
+        "engineVersion": "50",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "36",
+        "releaseDate": "2016-03-15",
+        "engineName": "Blink",
+        "engineVersion": "49",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "35",
+        "releaseDate": "2016-02-02",
+        "engineName": "Blink",
+        "engineVersion": "48",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "34",
+        "releaseDate": "2015-12-08",
+        "engineName": "Blink",
+        "engineVersion": "47",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "33",
+        "releaseDate": "2015-10-27",
+        "engineName": "Blink",
+        "engineVersion": "46",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "32",
+        "releaseDate": "2015-09-15",
+        "engineName": "Blink",
+        "engineVersion": "45",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "31",
+        "releaseDate": "2015-08-04",
+        "engineName": "Blink",
+        "engineVersion": "44",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "30",
+        "releaseDate": "2015-06-09",
+        "engineName": "Blink",
+        "engineVersion": "43",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "29",
+        "releaseDate": "2015-04-28",
+        "engineName": "Blink",
+        "engineVersion": "42",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "28",
+        "releaseDate": "2015-03-10",
+        "engineName": "Blink",
+        "engineVersion": "41",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "27",
+        "releaseDate": "2015-01-27",
+        "engineName": "Blink",
+        "engineVersion": "40",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "26",
+        "releaseDate": "2014-12-03",
+        "engineName": "Blink",
+        "engineVersion": "39",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "25",
+        "releaseDate": "2014-10-15",
+        "engineName": "Blink",
+        "engineVersion": "38",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "24",
+        "releaseDate": "2014-09-02",
+        "engineName": "Blink",
+        "engineVersion": "37",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "23",
+        "releaseDate": "2014-07-22",
+        "engineName": "Blink",
+        "engineVersion": "36",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "22",
+        "releaseDate": "2014-06-03",
+        "engineName": "Blink",
+        "engineVersion": "35",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "21",
+        "releaseDate": "2014-05-06",
+        "engineName": "Blink",
+        "engineVersion": "34",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "20",
+        "releaseDate": "2014-03-04",
+        "engineName": "Blink",
+        "engineVersion": "33",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "19",
+        "releaseDate": "2014-01-28",
+        "engineName": "Blink",
+        "engineVersion": "32",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "18",
+        "releaseDate": "2013-11-19",
+        "engineName": "Blink",
+        "engineVersion": "31",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "17",
+        "releaseDate": "2013-10-08",
+        "engineName": "Blink",
+        "engineVersion": "30",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "16",
+        "releaseDate": "2013-08-27",
+        "engineName": "Blink",
+        "engineVersion": "29",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    },
+    {
+        "name": "Opera",
+        "basedOn": "Chromium",
+        "version": "15",
+        "releaseDate": "2013-07-02",
+        "engineName": "Blink",
+        "engineVersion": "28",
+        "jsEngineName": "V8",
+        "jsEngineVersion": ""
+    }
+]

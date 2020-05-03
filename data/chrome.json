@@ -1,0 +1,882 @@
+[
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "0.2.149",
+        "releaseDate": "2008-09-02",
+        "engineName": "WebKit",
+        "engineVersion": "522",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "0.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "0.3.154",
+        "releaseDate": "2008-10-29",
+        "engineName": "WebKit",
+        "engineVersion": "522",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "0.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "0.4.154",
+        "releaseDate": "2008-11-24",
+        "engineName": "WebKit",
+        "engineVersion": "525",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "0.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "1.0.154",
+        "releaseDate": "2008-12-11",
+        "engineName": "WebKit",
+        "engineVersion": "528",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "0.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "2.0.172",
+        "releaseDate": "2009-05-24",
+        "engineName": "WebKit",
+        "engineVersion": "530",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "0.4"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "3.0.195",
+        "releaseDate": "2009-10-12",
+        "engineName": "WebKit",
+        "engineVersion": "532",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "1.2"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "4.0.249",
+        "releaseDate": "2010-01-25",
+        "engineName": "WebKit",
+        "engineVersion": "532.5",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "1.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "4.1.249",
+        "releaseDate": "2010-03-17",
+        "engineName": "WebKit",
+        "engineVersion": "532.5",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "1.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "5.0.375",
+        "releaseDate": "2010-05-21",
+        "engineName": "WebKit",
+        "engineVersion": "533",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "2.1"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "6.0.472",
+        "releaseDate": "2010-09-02",
+        "engineName": "WebKit",
+        "engineVersion": "534.3",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "2.2"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "7.0.517",
+        "releaseDate": "2010-10-21",
+        "engineName": "WebKit",
+        "engineVersion": "534.7",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "2.3.11"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "8.0.552",
+        "releaseDate": "2010-12-02",
+        "engineName": "WebKit",
+        "engineVersion": "534.10",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "2.4.9"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "9.0.597",
+        "releaseDate": "2011-02-03",
+        "engineName": "WebKit",
+        "engineVersion": "534.13",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "2.5.9"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "10.0.648",
+        "releaseDate": "2011-03-08",
+        "engineName": "WebKit",
+        "engineVersion": "534.16",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.0.12"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "11.0.696",
+        "releaseDate": "2011-04-27",
+        "engineName": "WebKit",
+        "engineVersion": "534.24",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.1.8"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "12.0.742",
+        "releaseDate": "2011-06-07",
+        "engineName": "WebKit",
+        "engineVersion": "534.30",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.2.10"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "13.0.782",
+        "releaseDate": "2011-08-02",
+        "engineName": "WebKit",
+        "engineVersion": "535.1",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.3.10"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "14.0.835",
+        "releaseDate": "2011-09-16",
+        "engineName": "WebKit",
+        "engineVersion": "535.1",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "Native Client (NaCl) enabled for apps in the Chrome Web Store[r 24]Web Audio API\nAdditional macOS Lion feature support\nSync Encryption for all data\nPrint preview on Mac\nValidation of HTTPS sites[r 25]\nExperimental Web Request extension API\nExperimental Content Settings extension API[r 26]"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "15.0.874",
+        "releaseDate": "2011-10-25",
+        "engineName": "WebKit",
+        "engineVersion": "535.2",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.5.10"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "16.0.912",
+        "releaseDate": "2011-12-13",
+        "engineName": "WebKit",
+        "engineVersion": "535.7",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.6.6"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "17.0.963",
+        "releaseDate": "2012-02-08",
+        "engineName": "WebKit",
+        "engineVersion": "535.11",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.7.12"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "18.0.1025",
+        "releaseDate": "2012-03-28",
+        "engineName": "WebKit",
+        "engineVersion": "535.19",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.8.9"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "19.0.1084",
+        "releaseDate": "2012-05-15",
+        "engineName": "WebKit",
+        "engineVersion": "536.5",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.9.24"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "20.0.1132",
+        "releaseDate": "2012-06-26",
+        "engineName": "WebKit",
+        "engineVersion": "536.10",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.10.6"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "21.0.1180",
+        "releaseDate": "2012-07-31",
+        "engineName": "WebKit",
+        "engineVersion": "537.1",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.11.10"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "22.0.1229",
+        "releaseDate": "2012-09-25",
+        "engineName": "WebKit",
+        "engineVersion": "537.4",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.12.19"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "23.0.1271",
+        "releaseDate": "2012-11-06",
+        "engineName": "WebKit",
+        "engineVersion": "537.11",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.13.7"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "24.0.1312",
+        "releaseDate": "2013-01-10",
+        "engineName": "WebKit",
+        "engineVersion": "537.17",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.14.5"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "25.0.1364",
+        "releaseDate": "2013-02-21",
+        "engineName": "WebKit",
+        "engineVersion": "537.22",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.15.11"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "26.0.1410",
+        "releaseDate": "2013-03-26",
+        "engineName": "WebKit",
+        "engineVersion": "537.31",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.16.14"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "27.0.1453",
+        "releaseDate": "2013-05-21",
+        "engineName": "WebKit",
+        "engineVersion": "537.36",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.17.6"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "28.0.1500",
+        "releaseDate": "2013-06-17",
+        "engineName": "Blink",
+        "engineVersion": "28",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.18.5"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "29.0.1547",
+        "releaseDate": "2013-08-20",
+        "engineName": "Blink",
+        "engineVersion": "29",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.19.18"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "30.0.1599",
+        "releaseDate": "2013-09-18",
+        "engineName": "Blink",
+        "engineVersion": "30",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.20.17"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "31.0.1650",
+        "releaseDate": "2013-11-12",
+        "engineName": "Blink",
+        "engineVersion": "31",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.21.18"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "32.0.1700",
+        "releaseDate": "2014-01-14",
+        "engineName": "Blink",
+        "engineVersion": "32",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.22.24"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "33.0.1750",
+        "releaseDate": "2014-02-18",
+        "engineName": "Blink",
+        "engineVersion": "33",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.23.17"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "34.0.1847",
+        "releaseDate": "2014-04-02",
+        "engineName": "Blink",
+        "engineVersion": "34",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.24.35"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "35.0.1916",
+        "releaseDate": "2014-05-20",
+        "engineName": "Blink",
+        "engineVersion": "35",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.25.28"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "36.0.1985",
+        "releaseDate": "2014-07-15",
+        "engineName": "Blink",
+        "engineVersion": "36",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.26.31"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "37.0.2062",
+        "releaseDate": "2014-08-26",
+        "engineName": "Blink",
+        "engineVersion": "37",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.27.34"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "38.0.2125",
+        "releaseDate": "2014-10-07",
+        "engineName": "Blink",
+        "engineVersion": "38",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.28.71"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "39.0.2171",
+        "releaseDate": "2014-11-12",
+        "engineName": "Blink",
+        "engineVersion": "39",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.29.88"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "40.0.2214",
+        "releaseDate": "2015-01-20",
+        "engineName": "Blink",
+        "engineVersion": "40",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "3.30.33"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "41.0.2272",
+        "releaseDate": "2015-03-03",
+        "engineName": "Blink",
+        "engineVersion": "41",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.1.0"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "42.0.2311",
+        "releaseDate": "2015-04-14",
+        "engineName": "Blink",
+        "engineVersion": "42",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.2.77"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "43.0.2357",
+        "releaseDate": "2015-05-19",
+        "engineName": "Blink",
+        "engineVersion": "43",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.3.61"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "44.0.2403",
+        "releaseDate": "2015-07-21",
+        "engineName": "Blink",
+        "engineVersion": "44",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.4.63"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "45.0.2454",
+        "releaseDate": "2015-09-01",
+        "engineName": "Blink",
+        "engineVersion": "45",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.5.103"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "46.0.2490",
+        "releaseDate": "2015-10-13",
+        "engineName": "Blink",
+        "engineVersion": "46",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.6.85"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "47.0.2526",
+        "releaseDate": "2015-12-01",
+        "engineName": "Blink",
+        "engineVersion": "47",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.7.80"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "48.0.2564",
+        "releaseDate": "2016-01-20",
+        "engineName": "Blink",
+        "engineVersion": "48",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.8.271"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "49.0.2623",
+        "releaseDate": "2016-03-02",
+        "engineName": "Blink",
+        "engineVersion": "49",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "4.9.385"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "50.0.2661",
+        "releaseDate": "2016-04-13",
+        "engineName": "Blink",
+        "engineVersion": "50",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.0.71"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "51.0.2704",
+        "releaseDate": "2016-05-25",
+        "engineName": "Blink",
+        "engineVersion": "51",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.1.281"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "52.0.2743",
+        "releaseDate": "2016-07-20",
+        "engineName": "Blink",
+        "engineVersion": "52",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.2.361"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "53.0.2785",
+        "releaseDate": "2016-08-31",
+        "engineName": "Blink",
+        "engineVersion": "53",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.3.332"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "54.0.2840",
+        "releaseDate": "2016-10-12",
+        "engineName": "Blink",
+        "engineVersion": "54",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.4.500"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "55.0.2883",
+        "releaseDate": "2016-12-01",
+        "engineName": "Blink",
+        "engineVersion": "55",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.5.372"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "56.0.2924",
+        "releaseDate": "2017-01-25",
+        "engineName": "Blink",
+        "engineVersion": "56",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.6.326"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "57.0.2987",
+        "releaseDate": "2017-03-09",
+        "engineName": "Blink",
+        "engineVersion": "57",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.7.492"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "58.0.3029",
+        "releaseDate": "2017-04-19",
+        "engineName": "Blink",
+        "engineVersion": "58",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.8.283"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "59.0.3071",
+        "releaseDate": "2017-06-05",
+        "engineName": "Blink",
+        "engineVersion": "59",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "5.9.211"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "60.0.3112",
+        "releaseDate": "2017-07-25",
+        "engineName": "Blink",
+        "engineVersion": "60",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.0.286"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "61.0.3163",
+        "releaseDate": "2017-09-05",
+        "engineName": "Blink",
+        "engineVersion": "61",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.1.534"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "62.0.3202",
+        "releaseDate": "2017-10-17",
+        "engineName": "Blink",
+        "engineVersion": "62",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.2.414"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "63.0.3239",
+        "releaseDate": "2017-12-05",
+        "engineName": "Blink",
+        "engineVersion": "63",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.3.292"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "64.0.3282",
+        "releaseDate": "2018-01-23",
+        "engineName": "Blink",
+        "engineVersion": "64",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.4.388"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "65.0.3325",
+        "releaseDate": "2018-03-06",
+        "engineName": "Blink",
+        "engineVersion": "65",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.5.254"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "66.0.3359",
+        "releaseDate": "2018-04-17",
+        "engineName": "Blink",
+        "engineVersion": "66",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.6.346"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "67.0.3396",
+        "releaseDate": "2018-05-29",
+        "engineName": "Blink",
+        "engineVersion": "67",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.7.288"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "68.0.3440",
+        "releaseDate": "2018-07-24",
+        "engineName": "Blink",
+        "engineVersion": "68",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.8.275"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "69.0.3497",
+        "releaseDate": "2018-09-04",
+        "engineName": "Blink",
+        "engineVersion": "69",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "6.9.427"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "70.0.3538",
+        "releaseDate": "2018-10-16",
+        "engineName": "Blink",
+        "engineVersion": "70",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.0.276"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "71.0.3578",
+        "releaseDate": "2018-12-04",
+        "engineName": "Blink",
+        "engineVersion": "71",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.1.302"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "72.0.3626",
+        "releaseDate": "2019-01-29",
+        "engineName": "Blink",
+        "engineVersion": "72",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.2.502"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "73.0.3683",
+        "releaseDate": "2019-03-12",
+        "engineName": "Blink",
+        "engineVersion": "73",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.3.492"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "74.0.3729",
+        "releaseDate": "2019-04-23",
+        "engineName": "Blink",
+        "engineVersion": "74",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.4.288"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "75.0.3770",
+        "releaseDate": "2019-06-04",
+        "engineName": "Blink",
+        "engineVersion": "75",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.5.288"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "76.0.3809",
+        "releaseDate": "2019-07-30",
+        "engineName": "Blink",
+        "engineVersion": "76",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.6.303"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "77.0.3865",
+        "releaseDate": "2019-09-10",
+        "engineName": "Blink",
+        "engineVersion": "77",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.7.299"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "78.0.3904",
+        "releaseDate": "2019-10-22",
+        "engineName": "Blink",
+        "engineVersion": "78",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.8.279"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "79.0.3945",
+        "releaseDate": "2019-12-10",
+        "engineName": "Blink",
+        "engineVersion": "79",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "7.9.317"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "80.0.3987",
+        "releaseDate": "2020-02-04",
+        "engineName": "Blink",
+        "engineVersion": "80",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "8.0.426"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "81.0.4044",
+        "releaseDate": "2020-04-07",
+        "engineName": "Blink",
+        "engineVersion": "81",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "8.1.307"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "83.0.4103",
+        "releaseDate": "2020-04-09",
+        "engineName": "Blink",
+        "engineVersion": "83",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "8.3"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "84.0",
+        "releaseDate": "2020-04-07",
+        "engineName": "Blink",
+        "engineVersion": "84",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "8.4"
+    },
+    {
+        "name": "Chrome",
+        "basedOn": "Chromium",
+        "version": "84.0",
+        "releaseDate": "2020-04-04",
+        "engineName": "Blink",
+        "engineVersion": "84",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "8.4"
+    }
+]

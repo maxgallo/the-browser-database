@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Microsoft Edge",
+        "version": "20.10240",
+        "engineName": "EdgeHTML",
+        "engineVersion": "12.10240",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2015-07-15"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "25.10586",
+        "engineName": "EdgeHTML",
+        "engineVersion": "13.10586",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2015-11-05"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "38.14393",
+        "engineName": "EdgeHTML",
+        "engineVersion": "14.14393",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2016-08-02"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "40.15063",
+        "engineName": "EdgeHTML",
+        "engineVersion": "15.15063",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2017-04-11"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "41.16299",
+        "engineName": "EdgeHTML",
+        "engineVersion": "16.16299",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2017-09-26"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "42.17134",
+        "engineName": "EdgeHTML",
+        "engineVersion": "17.17134",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2018-04-30"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "44.17763",
+        "engineName": "EdgeHTML",
+        "engineVersion": "18.17763",
+        "jsEngineName": "Chakra Core",
+        "jsEngineVersion": "",
+        "releaseDate": "2018-11-13"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "79.0.309",
+        "engineName": "Blink",
+        "engineVersion": "79",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "",
+        "releaseDate": "2020-01-15"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "80.0.361",
+        "engineName": "Blink",
+        "engineVersion": "80",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "",
+        "releaseDate": "2020-02-07"
+    },
+    {
+        "name": "Microsoft Edge",
+        "version": "81.0.416",
+        "engineName": "Blink",
+        "engineVersion": "81",
+        "jsEngineName": "V8",
+        "jsEngineVersion": "",
+        "releaseDate": "2020-04-13"
+    }
+]
