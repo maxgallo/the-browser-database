@@ -50,7 +50,8 @@ const browserSchema = {
                 },
                 jsEngineVersion: {
                     type: 'string',
-                    pattern: `^${versionRegex}$`,
+                    // allowing empty values
+                    pattern: `^${versionRegex}$|^$`,
                 },
             }
         }
@@ -65,14 +66,9 @@ function validateJsonWithSchema(fileName, schema) {
     console.log(test.errors);
 }
 
-// validateJsonWithSchema('chrome.json', browserSchema);
-// validateJsonWithSchema('firefox.json', browserSchema);
+validateJsonWithSchema('chrome.json', browserSchema);
+validateJsonWithSchema('firefox.json', browserSchema);
+validateJsonWithSchema('edge.json', browserSchema); // missing jsEngineVersions
+validateJsonWithSchema('safari.json', browserSchema); // missing jsEngineVersions
+validateJsonWithSchema('opera.json', browserSchema); // missing jsEngineVersions
 
-// missing jsEngineVersions
-// some Version contains stuff like "52 R2"
-// validateJsonWithSchema('opera.json', browserSchema);
-
-// missing jsEngineVersions
-// validateJsonWithSchema('edge.json', browserSchema);
-
-validateJsonWithSchema('safari.json', browserSchema);
