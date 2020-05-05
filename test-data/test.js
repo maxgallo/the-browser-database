@@ -34,7 +34,8 @@ const browserSchema = {
                     pattern: `^${versionRegex}$`,
                 },
                 releaseDate: {
-                    type: 'string'
+                    type: 'string',
+                    pattern: `^\\d{4}-\\d{2}-\\d{2}$`,
                 },
                 engineName: {
                     type: 'string',

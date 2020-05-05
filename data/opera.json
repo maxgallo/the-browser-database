@@ -63,7 +63,7 @@
         "name": "Opera",
         "basedOn": "Chromium",
         "version": "59",
-        "releaseDate": "(Final beta) 2019-02-28",
+        "releaseDate": "2019-02-28",
         "engineName": "Blink",
         "engineVersion": "72",
         "jsEngineName": "V8",
