@@ -1711,6 +1711,15 @@
     },
     {
         "name": "Firefox",
+        "version": "68.8.0",
+        "releaseDate": "2020-05-05",
+        "engineName": "Geko",
+        "engineVersion": "55",
+        "jsEngineName": "SpiderMonkey",
+        "jsEngineVersion": "52"
+    },
+    {
+        "name": "Firefox",
         "version": "69.0",
         "releaseDate": "2019-09-03",
         "engineName": "Geko",
@@ -1846,53 +1855,8 @@
     },
     {
         "name": "Firefox",
-        "version": "76.0b1",
-        "releaseDate": "2020-04-06",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "76.0b1",
-        "releaseDate": "2020-04-06",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
         "version": "76.0",
         "releaseDate": "2020-05-05",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "77.0a1",
-        "releaseDate": "2020-04-06",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "77.0b1",
-        "releaseDate": "2020-05-04",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "77.0b1",
-        "releaseDate": "2020-05-04",
         "engineName": "Geko",
         "engineVersion": "55",
         "jsEngineName": "SpiderMonkey",
@@ -1909,62 +1873,8 @@
     },
     {
         "name": "Firefox",
-        "version": "78.0a1",
-        "releaseDate": "2020-05-04",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "78.0b1",
-        "releaseDate": "2020-06-01",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "78.0b1",
-        "releaseDate": "2020-06-01",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
         "version": "78.0",
         "releaseDate": "2020-06-30",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "79.0a1",
-        "releaseDate": "2020-06-01",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "79.0b1",
-        "releaseDate": "2020-06-29",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "79.0b1",
-        "releaseDate": "2020-06-29",
         "engineName": "Geko",
         "engineVersion": "55",
         "jsEngineName": "SpiderMonkey",
@@ -1981,33 +1891,6 @@
     },
     {
         "name": "Firefox",
-        "version": "80.0a1",
-        "releaseDate": "2020-06-29",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "80.0b1",
-        "releaseDate": "2020-07-27",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "80.0b1",
-        "releaseDate": "2020-07-27",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
         "version": "80.0",
         "releaseDate": "2020-08-25",
         "engineName": "Geko",
@@ -2017,71 +1900,8 @@
     },
     {
         "name": "Firefox",
-        "version": "81.0a1",
-        "releaseDate": "2020-07-27",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "81.0b1",
-        "releaseDate": "2020-08-24",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "81.0b1",
-        "releaseDate": "2020-08-24",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
         "version": "81.0",
         "releaseDate": "2020-09-22",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "82.0a1",
-        "releaseDate": "2020-08-24",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "82.0b1",
-        "releaseDate": "2020-09-21",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "82.0b1",
-        "releaseDate": "2020-09-21",
-        "engineName": "Geko",
-        "engineVersion": "55",
-        "jsEngineName": "SpiderMonkey",
-        "jsEngineVersion": "52"
-    },
-    {
-        "name": "Firefox",
-        "version": "83.0a1",
-        "releaseDate": "2020-09-21",
         "engineName": "Geko",
         "engineVersion": "55",
         "jsEngineName": "SpiderMonkey",

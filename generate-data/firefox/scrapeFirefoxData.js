@@ -1,39 +1,49 @@
 function scrapeFirefoxData({
-    constants: { browserNames, javascriptEngineNames, engineNames },
+    constants: { browserNames, javascriptEngineNames, engineNames, versionRegex },
 }){
-    const  { cleanText, parseWikipediaDate, getCompareByStringVersion } = window.utils;
+    const  { cleanText, parseWikipediaDate, getCompareByStringVersion, parseTable} = window.utils;
 
     const allTables = document.querySelectorAll('table.wikitable');
 
-    const releaseTables = [...allTables].filter(table => (
-        table.rows[0]
-        && table.rows[0].cells[0]
-        && /Release history of Firefox/.test(table.rows[0].cells[0].innerText)
-    ));
+    const releaseTables = [...allTables]
+        .map(parseTable)
+        .filter(table => (
+            table[0]
+            && table[0][0]
+            && /Release history of Firefox/.test(table[0][0])
+        ));
 
     function getDataFromOneTable(table) {
         const tableData = [];
 
         let rowIndex = 2;
+        const rowsLength = table.length;
 
-        while(rowIndex <= table.rows.length) {
-            if (!table.rows[rowIndex]) {
+        while(rowIndex <= rowsLength) {
+            if (!table[rowIndex]) {
                 rowIndex++;
                 continue
             }
-            const parsedVersion = table.rows[rowIndex].cells[0].innerText;
-            const version = cleanText(parsedVersion);
-            if (/\d{1,4}(\.\d{1,4}(\.\d{1,4})?)?$/.test(version)) {
-                tableData.push({
-                    name: browserNames.FIREFOX,
-                    version,
-                    releaseDate: parseWikipediaDate(cleanText(table.rows[rowIndex].cells[1].innerText)),
-                    engineName: engineNames.GEKO,
-                    engineVersion: 'read from https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Versions',
-                    jsEngineName: javascriptEngineNames.SPIDER_MONKEY,
-                    jsEngineVersion: 'read from https://en.wikipedia.org/wiki/SpiderMonkey',
-                });
+
+            const [
+                version,
+                rawReleaseDate,
+            ] = table[rowIndex].map(cleanText);
+
+            if (/[a-zA-Z]/.test(version)) {
+                rowIndex++;
+                continue;
             }
+
+            tableData.push({
+                name: browserNames.FIREFOX,
+                version,
+                releaseDate: parseWikipediaDate(rawReleaseDate),
+                engineName: engineNames.GEKO,
+                engineVersion: '',
+                jsEngineName: javascriptEngineNames.SPIDER_MONKEY,
+                jsEngineVersion: '',
+            });
             rowIndex++;
         }
 

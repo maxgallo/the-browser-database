@@ -57,15 +57,14 @@ const browserSchema = {
     }
 };
 
-function validateJsonWithSchema(filePath, schema) {
+function validateJsonWithSchema(fileName, schema) {
+    const filePath = path.resolve(dataFilePath, fileName);
+
     const test = ajv.compile(schema);
     const isValid = test(require(filePath));
-    return test.errors;
-    // return isValid ? obj : { obj, error: test.errors }
+    console.log(test.errors);
 }
 
-const chromeDataFilePath = path.resolve(dataFilePath, 'chrome.json');
-
-const result = validateJsonWithSchema(chromeDataFilePath, browserSchema);
-console.log(result);
+// validateJsonWithSchema('chrome.json', browserSchema);
+validateJsonWithSchema('firefox.json', browserSchema);
 

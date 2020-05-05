@@ -11,5 +11,6 @@
 
 ## Missing information
 
-- Opera jsEngineVersion (v8)
-- Edge jsEngineVersion  (chakra & v8)
+- Opera jsEngineVersion
+- Edge jsEngineVersion
+- Safari jsEngineVersion
