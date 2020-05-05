@@ -65,6 +65,6 @@ function validateJsonWithSchema(fileName, schema) {
     console.log(test.errors);
 }
 
-// validateJsonWithSchema('chrome.json', browserSchema);
+validateJsonWithSchema('chrome.json', browserSchema);
 validateJsonWithSchema('firefox.json', browserSchema);
 
