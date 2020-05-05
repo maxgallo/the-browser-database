@@ -1,15 +1,16 @@
 function scrapeSafariData({
     constants: { browserNames, javascriptEngineNames, engineNames },
 }){
-    const  { cleanText, parseWikipediaDate, getCompareByStringVersion } = window.utils;
+    const  { cleanText, parseWikipediaDate, getCompareByStringVersion, parseTable } = window.utils;
 
     const allTables = document.querySelectorAll('table.wikitable');
 
     const releaseTables = [...allTables]
+        .map(parseTable)
         .filter(table => (
-            table.rows[0]
-            && table.rows[0].cells[0]
-            && /Table of versions/.test(table.rows[0].cells[0].innerText)
+            table[0]
+            && table[0][0]
+            && /Table of versions/.test(table[0][0])
         ))
         .slice(0, 12);
 
@@ -17,44 +18,29 @@ function scrapeSafariData({
         const tableData = [];
 
         let rowIndex = 2;
+        const rowsLength = table.length;
 
-        let skipNextRowsCount = 0;
-
-        while(rowIndex <= table.rows.length) {
-            const row = table.rows[rowIndex];
+        while(rowIndex <= rowsLength) {
+            const row = table[rowIndex];
             if (!row) {
                 rowIndex++;
                 continue
             }
 
-            if (skipNextRowsCount > 0) {
-                rowIndex++;
-                skipNextRowsCount--;
-                continue;
-            }
-
-            const rowspan = row.cells[0] && parseInt(row.cells[0].getAttribute('rowspan'));
-            if (rowspan && rowspan > 0) {
-                skipNextRowsCount = rowspan - 1;
-            }
-
             const [
-                firstColumText,
-                secondColumnText,
-                thirdColumnText,
-                fourthColumnText,
-            ] = [...row.cells].map(x => x.innerText).map(cleanText)
+                version,
+                rawEngineVersion,
+                _,
+                rawReleaseDate,
+            ] = table[rowIndex].map(cleanText);
 
-            const version = firstColumText;
+            if (/Beta/.test(version)) {
+                rowIndex++;
+                continue
+            }
 
-            const engineVersion = secondColumnText;
-
-            const maybeDateInThirdColumn = parseWikipediaDate(thirdColumnText);
-            const maybeDateInFourthColumn = parseWikipediaDate(fourthColumnText);
-
-            const releaseDate = /\d{4}-\d{2}-\d{2}/.test(maybeDateInThirdColumn)
-                ? maybeDateInThirdColumn
-                : maybeDateInFourthColumn;
+            const releaseDate = parseWikipediaDate(rawReleaseDate);
+            const engineVersion = rawEngineVersion.replace(/\[.*\]/,'');
 
             tableData.push({
                 name: browserNames.SAFARI,
@@ -77,6 +63,15 @@ function scrapeSafariData({
     }, []);
 
     data.sort(getCompareByStringVersion('version'));
+
+    // Fill the gaps in WebKit versions (eg. Safari 8)
+    let lastEngineVersion;
+    data.forEach(safariEntryData => {
+        if (!safariEntryData.engineVersion) {
+            safariEntryData.engineVersion = lastEngineVersion;
+        }
+        lastEngineVersion = safariEntryData.engineVersion;
+    });
 
     return data;
 }
