@@ -6,17 +6,20 @@
 
 <script>
 import BrowsersTable from '~/components/BrowsersTable.vue'
+import axios from 'axios'
 
 export default {
   components: {
     BrowsersTable
   },
-  asyncData({ params }) {
-    const chromeData = require('../../data/chrome.json')
-    const edgeData = require('../../data/edge.json')
-    const operaData = require('../../data/opera.json')
-    const safariData = require('../../data/safari.json')
-    const firefoxData = require('../../data/firefox.json')
+  async asyncData({ params }) {
+    const basePath = 'https://raw.githubusercontent.com/maxgallo/the-browser-database/master/data';
+
+    const { data: chromeData } = await axios.get(`${basePath}/chrome.json`)
+    const { data: edgeData } = await axios.get(`${basePath}/edge.json`)
+    const { data: operaData } = await axios.get(`${basePath}/opera.json`)
+    const { data: safariData } = await axios.get(`${basePath}/safari.json`)
+    const { data: firefoxData } = await axios.get(`${basePath}/firefox.json`)
 
     const browsersData = [
       ...chromeData,
