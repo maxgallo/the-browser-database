@@ -1,6 +1,6 @@
-# frontend3
+# Frontend
 
-> My divine Nuxt.js project
+Color Palette: https://coolors.co/292f36-4ecdc4-f7fff7-ff6b6b-ffe66d
 
 ## Build Setup
 

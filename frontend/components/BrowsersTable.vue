@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1>Table</h1>
+  <div class="BrowsersTable">
     <el-table :data="browsersData" height="700" style="width: 100%">
       <el-table-column prop="releaseDate" label="Date" width="120">
       </el-table-column>
@@ -54,6 +53,12 @@
     </el-table>
   </div>
 </template>
+
+<style>
+.el-table th>.cell.highlight {
+    color: #4ECDC5;
+}
+</style>
 
 <script>
 function getUniqueProperties(arrayOfObjects, propertyName) {

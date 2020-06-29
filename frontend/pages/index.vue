@@ -1,13 +1,8 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        frontend3
-      </h1>
-      <h2 class="subtitle">
-        My divine Nuxt.js project
-      </h2>
+  <div>
+    <top-header />
+    <div class="container">
+      <browsers-table :browsers-data="browsersData"/>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -30,10 +25,33 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import TopHeader from '~/components/TopHeader.vue';
+import BrowsersTable from '~/components/BrowsersTable2.vue'
+import axios from 'axios'
 
 export default {
   components: {
-    Logo
+    Logo,
+    TopHeader,
+    BrowsersTable
+  },
+  async asyncData({ params }) {
+    const basePath = 'https://raw.githubusercontent.com/maxgallo/the-browser-database/master/data';
+
+    const { data: chromeData } = await axios.get(`${basePath}/chrome.json`)
+    const { data: edgeData } = await axios.get(`${basePath}/edge.json`)
+    const { data: operaData } = await axios.get(`${basePath}/opera.json`)
+    const { data: safariData } = await axios.get(`${basePath}/safari.json`)
+    const { data: firefoxData } = await axios.get(`${basePath}/firefox.json`)
+
+    const browsersData = [
+      ...chromeData,
+      ...edgeData,
+      ...operaData,
+      ...safariData,
+      ...firefoxData
+    ]
+    return { browsersData };
   }
 }
 </script>
@@ -42,10 +60,6 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
