@@ -12,6 +12,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@mdn/browser-compat-data": "^2.0.2",
     "@nuxtjs/axios": "^5.3.6",
     "axios": "^0.19.2",
     "element-ui": "^2.4.11",
